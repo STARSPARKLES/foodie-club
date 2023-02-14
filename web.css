@@ -1,0 +1,199 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+
+#navbar::before {
+    content: '';
+    background-color: rgb(117, 110, 110);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ol {
+    display: flex;
+}
+
+#navbar ol li {
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar ol li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 15px 42px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+#navbar ol li a:hover {
+    cursor: pointer;
+    color: white;
+    /* background-color: white; */
+}
+
+#home {
+    font-family: "pacifico";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 580px;
+}
+
+#home::before {
+    background: url("https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60") no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+
+}
+
+#home h1 {
+
+    font-size: 22px;
+}
+
+.h-primary {
+    font-size: 58px;
+}
+
+.btn {
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#services {
+    display: flex;
+    margin: 20px 30px;
+
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0px 15px;
+    padding: 10px 5px;
+    background-color: whitesmoke;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.h-primarycenter {
+    text-align: center;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "kanit";
+}
+
+.h-secondarycenter {
+    font-family: "kanit";
+    font-size: 28px;
+}
+
+#services .center {
+    text-align: center;
+    font-family: "kanit";
+    font-size: 15px;
+}
+
+.client-section::before {
+    background: url("https://github.com/STARSPARKLES/foodie-club/blob/main/messages.jpg?raw=true") no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.39;
+}
+
+.client-section {
+    height: 300px;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    padding: 10px 0px;
+    margin: 10px 10px;
+}
+
+#clients img {
+    padding: 25px;
+    height: 70px;
+}
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    background: url("https://github.com/STARSPARKLES/foodie-club/blob/main/email.jpg?raw=true") no-repeat center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    text-align: center;
+}
+form input{
+    width: 30%;
+    padding: 10px 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+
+}
